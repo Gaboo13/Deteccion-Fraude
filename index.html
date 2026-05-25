@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --bg-primary: #0f172a;
@@ -37,7 +39,7 @@
 
         body {
             background-color: var(--bg-primary);
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
                 radial-gradient(at 50% 50%, rgba(239, 68, 68, 0.05) 0px, transparent 50%);
@@ -285,9 +287,17 @@
             font-size: 1.1rem;
         }
 
-        .btn-preset.safe-preset i { color: var(--success); }
-        .btn-preset.warning-preset i { color: var(--warning); }
-        .btn-preset.danger-preset i { color: var(--danger); }
+        .btn-preset.safe-preset i {
+            color: var(--success);
+        }
+
+        .btn-preset.warning-preset i {
+            color: var(--warning);
+        }
+
+        .btn-preset.danger-preset i {
+            color: var(--danger);
+        }
 
         /* Form Controls */
         .form-grid {
@@ -356,7 +366,8 @@
             pointer-events: none;
         }
 
-        input, select {
+        input,
+        select {
             width: 100%;
             background: rgba(15, 23, 42, 0.6);
             border: 1px solid var(--border-color);
@@ -367,7 +378,8 @@
             outline: none;
         }
 
-        input:focus, select:focus {
+        input:focus,
+        select:focus {
             border-color: var(--primary-accent);
             box-shadow: 0 0 10px var(--primary-glow);
             background: rgba(15, 23, 42, 0.8);
@@ -400,6 +412,7 @@
             -webkit-appearance: none;
             margin: 0;
         }
+
         input[type="number"] {
             -moz-appearance: textfield;
         }
@@ -604,8 +617,13 @@
             margin-top: 2px;
         }
 
-        .alert-banner.safe .alert-icon { color: var(--success); }
-        .alert-banner.fraud .alert-icon { color: var(--danger); }
+        .alert-banner.safe .alert-icon {
+            color: var(--success);
+        }
+
+        .alert-banner.fraud .alert-icon {
+            color: var(--danger);
+        }
 
         .alert-text h3 {
             font-size: 1.05rem;
@@ -674,10 +692,18 @@
             font-size: 0.75rem;
         }
 
-        .why-item.anomaly i { color: var(--danger); }
-        .why-item.safe-habit i { color: var(--success); }
-        .why-item.neutral i { color: var(--text-secondary); }
-        
+        .why-item.anomaly i {
+            color: var(--danger);
+        }
+
+        .why-item.safe-habit i {
+            color: var(--success);
+        }
+
+        .why-item.neutral i {
+            color: var(--text-secondary);
+        }
+
         .why-item strong {
             color: var(--text-primary);
         }
@@ -769,44 +795,108 @@
 
         /* Animations */
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         @keyframes spin-reverse {
-            0% { transform: rotate(360deg); }
-            100% { transform: rotate(0deg); }
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(1.08); opacity: 0.8; }
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.08);
+                opacity: 0.8;
+            }
         }
 
         @keyframes pulse-slow {
-            0%, 100% { opacity: 0.5; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.03); }
+
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.03);
+            }
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-            20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-5px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(5px);
+            }
         }
 
         /* Institution Badge */
@@ -925,6 +1015,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -933,7 +1024,8 @@
             <span>Sentinel Core v2.4</span>
         </div>
         <h1>Analizador Inteligente de Fraude</h1>
-        <p class="subtitle">Clasificación de transacciones bancarias en tiempo real basada en Inteligencia Artificial</p>
+        <p class="subtitle">Clasificación de transacciones bancarias en tiempo real basada en Inteligencia Artificial
+        </p>
         <div class="institution-badge">
             <i class="fa-solid fa-school"></i>
             <span>Escuela Tecnológica Instituto Técnico Central</span>
@@ -943,7 +1035,7 @@
     <!-- Credits Block / Integrantes del Proyecto -->
     <div class="credits-container">
         <div class="credits-header">
-            <i class="fa-solid fa-users-gear"></i> Equipo de Desarrollo 
+            <i class="fa-solid fa-users-gear"></i> Equipo de Desarrollo
         </div>
         <div class="credits-list">
             <div class="credit-tag"><i class="fa-solid fa-circle-user"></i> Juan Sebastian Gomez Forero</div>
@@ -955,7 +1047,7 @@
     </div>
 
     <div class="dashboard-container">
-        
+
         <!-- Left Column: Inputs & Presets -->
         <div class="glass-card">
             <div class="card-title">
@@ -966,7 +1058,9 @@
             <!-- Dynamic Guide -->
             <div class="guide-box">
                 <i class="fa-solid fa-circle-info" style="color: var(--primary-accent); margin-right: 6px;"></i>
-                <strong>Instrucciones de Uso Manual:</strong> Diligencia cada campo de la transacción a analizar de forma manual o utiliza los <i>presets</i> rápidos para rellenar perfiles típicos de prueba. El modelo de <b>Bosque Aleatorio</b> evaluará los datos asíncronamente y justificará las razones de su diagnóstico.
+                <strong>Instrucciones de Uso Manual:</strong> Diligencia cada campo de la transacción a analizar de
+                forma manual o utiliza los <i>presets</i> rápidos para rellenar perfiles típicos de prueba. El modelo de
+                <b>Bosque Aleatorio</b> evaluará los datos asíncronamente y justificará las razones de su diagnóstico.
             </div>
 
             <!-- Presets Section -->
@@ -977,11 +1071,13 @@
                         <i class="fa-solid fa-basket-shopping"></i>
                         <span>Compra Común</span>
                     </button>
-                    <button type="button" class="btn-preset warning-preset" id="preset-warning" onclick="loadPreset('warning')">
+                    <button type="button" class="btn-preset warning-preset" id="preset-warning"
+                        onclick="loadPreset('warning')">
                         <i class="fa-solid fa-clock"></i>
                         <span>Anomalía Nocturna</span>
                     </button>
-                    <button type="button" class="btn-preset danger-preset" id="preset-danger" onclick="loadPreset('danger')">
+                    <button type="button" class="btn-preset danger-preset" id="preset-danger"
+                        onclick="loadPreset('danger')">
                         <i class="fa-solid fa-plane-departure"></i>
                         <span>Fraude Internac.</span>
                     </button>
@@ -991,12 +1087,13 @@
             <!-- Transaction Form -->
             <form id="fraud-form" onsubmit="event.preventDefault(); analizar();">
                 <div class="form-grid">
-                    
+
                     <div class="form-group">
                         <label for="amount">
                             <i class="fa-solid fa-dollar-sign"></i> Monto de Transferencia
                         </label>
-                        <span class="field-desc">El valor monetario total en pesos colombianos de la transferencia en curso.</span>
+                        <span class="field-desc">El valor monetario total en dólares de la transferencia en
+                            curso.</span>
                         <div class="input-wrapper no-select">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <input type="number" step="0.01" min="0" id="amount" placeholder="Ej: 150.00" required>
@@ -1007,7 +1104,8 @@
                         <label for="hour">
                             <i class="fa-solid fa-clock"></i> Hora del Día (0-23)
                         </label>
-                        <span class="field-desc">La hora militar de ejecución de la transacción (0 para medianoche).</span>
+                        <span class="field-desc">La hora militar de ejecución de la transacción (0 para
+                            medianoche).</span>
                         <div class="input-wrapper no-select">
                             <i class="fa-solid fa-business-time"></i>
                             <input type="number" min="0" max="23" id="hour" placeholder="Ej: 14" required>
@@ -1038,7 +1136,8 @@
                         <label for="transactions_last_24h">
                             <i class="fa-solid fa-list-check"></i> Transacciones Últimas 24h
                         </label>
-                        <span class="field-desc">Cantidad de transferencias realizadas por la cuenta en las últimas 24 horas.</span>
+                        <span class="field-desc">Cantidad de transferencias realizadas por la cuenta en las últimas 24
+                            horas.</span>
                         <div class="input-wrapper no-select">
                             <i class="fa-solid fa-arrow-rotate-right"></i>
                             <input type="number" min="0" id="transactions_last_24h" placeholder="Ej: 3" required>
@@ -1049,10 +1148,12 @@
                         <label for="avg_amount_user">
                             <i class="fa-solid fa-chart-line"></i> Promedio Gasto Usuario
                         </label>
-                        <span class="field-desc">Gasto promedio histórico del tarjetahabiente en sus transferencias seguras.</span>
+                        <span class="field-desc">Gasto promedio histórico del tarjetahabiente en sus transferencias
+                            seguras.</span>
                         <div class="input-wrapper no-select">
                             <i class="fa-solid fa-calculator"></i>
-                            <input type="number" step="0.01" min="0" id="avg_amount_user" placeholder="Ej: 100.00" required>
+                            <input type="number" step="0.01" min="0" id="avg_amount_user" placeholder="Ej: 100.00"
+                                required>
                         </div>
                     </div>
 
@@ -1060,10 +1161,12 @@
                         <label for="distance_from_home">
                             <i class="fa-solid fa-location-dot"></i> Distancia del Hogar (km)
                         </label>
-                        <span class="field-desc">Distancia del terminal o cajero en kilómetros respecto a la residencia declarada.</span>
+                        <span class="field-desc">Distancia del terminal o cajero en kilómetros respecto a la residencia
+                            declarada.</span>
                         <div class="input-wrapper no-select">
                             <i class="fa-solid fa-road"></i>
-                            <input type="number" step="0.1" min="0" id="distance_from_home" placeholder="Ej: 5.2" required>
+                            <input type="number" step="0.1" min="0" id="distance_from_home" placeholder="Ej: 5.2"
+                                required>
                         </div>
                     </div>
 
@@ -1071,7 +1174,8 @@
                         <label for="is_international">
                             <i class="fa-solid fa-earth-americas"></i> Tipo de Cobertura Geográfica
                         </label>
-                        <span class="field-desc">Si el banco emisor y el procesador de pagos son del mismo país o del exterior.</span>
+                        <span class="field-desc">Si el banco emisor y el procesador de pagos son del mismo país o del
+                            exterior.</span>
                         <div class="input-wrapper">
                             <i class="fa-solid fa-globe"></i>
                             <select id="is_international" required>
@@ -1101,7 +1205,8 @@
             <div id="state-empty" class="state-empty">
                 <i class="fa-solid fa-fingerprint"></i>
                 <h3>Listo para Inspección</h3>
-                <p>Ingresa los parámetros de la transferencia en el panel de la izquierda o carga un perfil de prueba para detonar el análisis preventivo del modelo.</p>
+                <p>Ingresa los parámetros de la transferencia en el panel de la izquierda o carga un perfil de prueba
+                    para detonar el análisis preventivo del modelo.</p>
             </div>
 
             <!-- State 2: Loading -->
@@ -1112,12 +1217,13 @@
                     <div class="spinner-icon"><i class="fa-solid fa-brain"></i></div>
                 </div>
                 <h3>Procesando con Random Forest</h3>
-                <p style="color: var(--text-secondary); font-size: 0.85rem;">Calculando ponderación de árboles de decisión y mapeando hiperplanos de riesgo...</p>
+                <p style="color: var(--text-secondary); font-size: 0.85rem;">Calculando ponderación de árboles de
+                    decisión y mapeando hiperplanos de riesgo...</p>
             </div>
 
             <!-- State 3: Results Displayed -->
             <div id="state-results" class="state-results">
-                
+
                 <!-- Risk Gauge -->
                 <div class="risk-gauge-container">
                     <svg class="gauge-svg">
@@ -1140,7 +1246,8 @@
                             <span id="res-verdict">Transacción Aprobada</span>
                             <span class="badge-risk" id="res-badge">Bajo</span>
                         </h3>
-                        <p id="res-description">Los patrones analizados corresponden a una transferencia ordinaria segura.</p>
+                        <p id="res-description">Los patrones analizados corresponden a una transferencia ordinaria
+                            segura.</p>
                     </div>
                 </div>
 
@@ -1194,21 +1301,24 @@
             <i class="fa-brands fa-python"></i>
             <div class="tech-box-text">
                 <h4>Flask API Backend</h4>
-                <p>Una API REST ligera en Python encapsula el modelo predictivo, sirviendo predicciones binarias y probabilísticas mediante HTTP POST en formato JSON.</p>
+                <p>Una API REST ligera en Python encapsula el modelo predictivo, sirviendo predicciones binarias y
+                    probabilísticas mediante HTTP POST en formato JSON.</p>
             </div>
         </div>
         <div class="tech-box">
             <i class="fa-solid fa-tree"></i>
             <div class="tech-box-text">
                 <h4>Random Forest Model</h4>
-                <p>Ensamblado de clasificación de bosque aleatorio entrenado en Google Colab, ponderado con class_weight='balanced' para mitigar el sesgo del desbalance de fraude.</p>
+                <p>Ensamblado de clasificación de bosque aleatorio entrenado en Google Colab, ponderado con
+                    class_weight='balanced' para mitigar el sesgo del desbalance de fraude.</p>
             </div>
         </div>
         <div class="tech-box">
             <i class="fa-solid fa-bolt"></i>
             <div class="tech-box-text">
                 <h4>Predicción en Tiempo Real</h4>
-                <p>El frontend se comunica de forma asíncrona mediante peticiones fetch asíncronas para evaluar las métricas espaciales y temporales instantáneamente.</p>
+                <p>El frontend se comunica de forma asíncrona mediante peticiones fetch asíncronas para evaluar las
+                    métricas espaciales y temporales instantáneamente.</p>
             </div>
         </div>
     </div>
@@ -1413,9 +1523,9 @@
 
             // Determinar origen del backend. Soporta ejecución local y remota.
             const apiBase = window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1')
-                ? window.location.origin 
+                ? window.location.origin
                 : 'http://localhost:5000';
-                
+
             try {
                 // Pequeño delay de 800ms para permitir ver la animación de análisis en la UI
                 await new Promise(resolve => setTimeout(resolve, 800));
@@ -1431,7 +1541,7 @@
                 }
 
                 const res = await response.json();
-                
+
                 // Ocultar carga y mostrar resultados
                 document.getElementById('state-loading').style.display = 'none';
                 document.getElementById('state-results').style.display = 'flex';
@@ -1439,7 +1549,7 @@
                 // 1. Actualizar el Medidor Circular SVG
                 const probPercent = res.probabilidad_porcentaje;
                 document.getElementById('res-percent').innerText = `${probPercent.toFixed(1)}%`;
-                
+
                 const gaugeFill = document.getElementById('gauge-fill');
                 const offset = 282.7 - (282.7 * (probPercent / 100));
                 gaugeFill.style.strokeDashoffset = offset;
@@ -1470,7 +1580,7 @@
                     banner.classList.add('fraud');
                     iconDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
                     verdictText.innerText = "ALERTA: Fraude Detectado";
-                    
+
                     if (res.riesgo === 'Crítico') {
                         descriptionText.innerText = "Múltiples anomalías extremas detectadas. Se recomienda bloqueo inmediato preventivo de la cuenta de origen.";
                     } else {
@@ -1480,7 +1590,7 @@
                     banner.classList.add('safe');
                     iconDiv.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
                     verdictText.innerText = "Transacción Autorizada";
-                    
+
                     if (res.riesgo === 'Medio') {
                         descriptionText.innerText = "Transacción aprobada, pero presenta desviaciones leves. Mapeada para rastreo en historial.";
                     } else {
@@ -1522,12 +1632,15 @@
                 <span>Sentinel AI &mdash; Detección de Fraude Bancario</span>
             </div>
             <div class="footer-links">
-                <a href="https://colab.research.google.com" target="_blank" rel="noopener" class="footer-link colab-link" id="link-colab">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Colab" style="width:18px; height:18px; vertical-align:middle;">
+                <a href="https://colab.research.google.com/drive/1AdGsMHHzCgHgq94JQCbKs4yGt0bN74uz?usp=sharing#scrollTo=fS5ywDL9oWx9"
+                    target="_blank" rel="noopener" class="footer-link colab-link" id="link-colab">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg"
+                        alt="Colab" style="width:18px; height:18px; vertical-align:middle;">
                     Ver Notebook en Google Colab
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener" class="footer-link github-link" id="link-github">
+                <a href="https://github.com/Gaboo13/Deteccion-Fraude" target="_blank" rel="noopener"
+                    class="footer-link github-link" id="link-github">
                     <i class="fa-brands fa-github"></i>
                     Ver Repositorio en GitHub
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -1541,4 +1654,5 @@
         </div>
     </footer>
 </body>
+
 </html>
